@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Packages</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    margin:0;
+    background-image:url("images/travel-bg.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#333;
+    padding:15px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin-right:20px;
+}
+
+/* Heading */
+
+h1{
+    color:white;
+    text-shadow:2px 2px 5px black;
+}
+
+/* Package Card */
+
+.package{
+    width:300px;
+    height:250px;
+    margin:40px;
+    display:inline-block;
+    text-align:center;
+    color:white;
+    border-radius:15px;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    box-shadow:0px 10px 15px rgba(0,0,0,0.5);
+    transition:0.3s;
+}
+
+.package:hover{
+    transform:translateY(-10px);
+}
+
+/* Dark overlay */
+
+.overlay{
+    background:rgba(0,0,0,0.5);
+    height:100%;
+    border-radius:15px;
+    padding-top:40px;
+}
+
+/* Button */
+
+button{
+    padding:10px 20px;
+    background:#333;
+    color:white;
+    border:none;
+    border-radius:20px;
+    margin-top:10px;
+}
+
+button:hover{
+    background:green;
+}
+
+.footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    margin: 20px 0px 0px 0px;
+    padding:20px;
+}
+
+</style>
+
+<script>
+function book(name)
+{
+    alert("Package booked for " + name);
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="packages.html">Packages</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<center>
+
+<h1>Travel Packages</h1>
+
+<!-- Goa -->
+
+<div class="package" style="background-image:url('images/goa-beach.jpg');">
+    <div class="overlay">
+        <h3>Goa Package</h3>
+        <p>3 Days / 2 Nights</p>
+        <p>₹8000</p>
+        <button onclick="book('Goa')">Book</button>
+    </div>
+</div>
+
+    <!-- Kerala -->
+
+<div class="package" style="background-image:url('images/kerala.jpg');">
+    <div class="overlay">
+        <h3>Kerala Package</h3>
+        <p>4 Days / 3 Nights</p>
+        <p>₹12000</p>
+        <button onclick="book('Kerala')">Book</button>
+    </div>
+</div>
+
+    <!-- Delhi -->
+
+<div class="package" style="background-image:url('images/taj-mahal.jpg');">
+    <div class="overlay">
+        <h3>Delhi Package</h3>
+        <p>2 Days / 1 Night</p>
+        <p>₹6000</p>
+        <button onclick="book('Delhi')">Book</button>
+    </div>
+</div>
+
+    <!-- Manali -->
+
+<div class="package" style="background-image:url('images/manali.jpg');">
+    <div class="overlay">
+        <h3>Manali Package</h3>
+        <p>5 Days / 4 Nights</p>
+        <p>₹15000</p>
+        <button onclick="book('Manali')">Book</button>
+    </div>
+</div>
+
+    <!-- Jaipur -->
+
+<div class="package" style="background-image:url('images/jaipur.jpg');">
+    <div class="overlay">
+        <h3>Jaipur Package</h3>
+        <p>3 Days / 2 Nights</p>
+        <p>₹7000</p>
+        <button onclick="book('Jaipur')">Book</button>
+    </div>
+</div>
+
+    <!-- Ooty -->
+
+<div class="package" style="background-image:url('images/ooty.jpg');">
+    <div class="overlay">
+        <h3>Ooty Package</h3>
+        <p>3 Days / 2 Nights</p>
+        <p>₹6500</p>
+        <button onclick="book('Ooty')">Book</button>
+    </div>
+</div>
+
+</center>
+
+
+<div class="footer">
+    <p>© 2026 Travel India</p>
+</div>
+
+</body>
+</html>

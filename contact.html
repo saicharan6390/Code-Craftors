@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background-image:url("images/travel-bg.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+/* Navbar */
+
+.navbar{
+background:#333;
+padding:15px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin-right:20px;
+}
+
+/* Contact Box */
+
+.form{
+width:420px;
+margin:auto;
+margin-top:80px;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0px 10px 20px rgba(0,0,0,0.4);
+text-align:center;
+}
+
+/* Heading */
+
+.form h2{
+margin-bottom:20px;
+font-size:28px;
+}
+
+/* Input fields */
+
+input, textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:15px;
+}
+
+/* Button */
+
+button{
+padding:12px 25px;
+background:#333;
+color:white;
+border:none;
+border-radius:25px;
+margin-top:10px;
+cursor:pointer;
+}
+
+button:hover{
+background:green;
+}
+
+/* Contact Info */
+
+.info{
+text-align:center;
+margin-top:40px;
+color:black;
+}
+
+.info div{
+display:inline-block;
+margin:20px;
+font-size:18px;
+}
+
+</style>
+
+<script>
+
+function submitForm()
+{
+alert("Message Sent Successfully!");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="navbar">
+<a href="index.html">Home</a>
+<a href="destinations.html">Destinations</a>
+<a href="packages.html">Packages</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<div class="form">
+
+<h2>Contact Us</h2>
+
+<input type="text" placeholder="Your Name" >
+
+<input type="email" placeholder="Your Email" >
+
+<textarea rows="4" placeholder="Your Message" ></textarea>
+
+<button onclick="submitForm()">Send Message</button>
+
+</div>
+
+<div class="info">
+
+<div >📍 Chennai, India</div>
+
+<div>📞 +91 98765 43210</div>
+
+<div>✉ travelindia@email.com</div>
+
+</div>
+
+</body>
+</html>
