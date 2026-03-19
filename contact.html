@@ -9,6 +9,7 @@ body{
 font-family:Arial;
 margin:0;
 background-image:url("images/travel-bg.jpg");
+background-color: lavenderblush;
 background-size:cover;
 background-repeat:no-repeat;
 }
@@ -21,7 +22,7 @@ padding:15px;
 }
 
 .navbar a{
-color:white;
+color:rgb(240, 229, 229);
 text-decoration:none;
 margin-right:20px;
 }
@@ -29,14 +30,15 @@ margin-right:20px;
 /* Contact Box */
 
 .form{
-width:420px;
-margin:auto;
-margin-top:80px;
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0px 10px 20px rgba(0,0,0,0.4);
-text-align:center;
+    width:420px;
+    margin:auto;
+    margin-top:80px;
+    background-color:maroon;
+    padding:50px;
+    border-radius:15px;
+    box-shadow:0px 10px 20px rgba(0,0,0,0.4);
+    text-align:center;
+    /* align-items: center; */
 }
 
 /* Heading */
@@ -51,7 +53,7 @@ font-size:28px;
 input, textarea{
 width:100%;
 padding:12px;
-margin:10px 0;
+margin:12px 0px;
 border-radius:8px;
 border:1px solid #ccc;
 font-size:15px;
@@ -60,13 +62,13 @@ font-size:15px;
 /* Button */
 
 button{
-padding:12px 25px;
-background:#333;
-color:white;
-border:none;
-border-radius:25px;
-margin-top:10px;
-cursor:pointer;
+    padding:12px 25px;
+    background:#333;
+    color:white;
+    border:none;
+    border-radius:25px;
+    margin-top:10px;
+    cursor:pointer;
 }
 
 button:hover{
@@ -112,15 +114,15 @@ alert("Message Sent Successfully!");
 
 <div class="form">
 
-<h2>Contact Us</h2>
+    <u><h2>Contact Us</h2></u>
 
-<input type="text" placeholder="Your Name" >
+    <input type="text" placeholder="Your Name" >
 
-<input type="email" placeholder="Your Email" >
+    <input type="email" placeholder="Your Email" >
 
-<textarea rows="4" placeholder="Your Message" ></textarea>
+    <textarea rows="4" placeholder="Your Message" ></textarea>
 
-<button onclick="submitForm()">Send Message</button>
+    <button onclick="submitForm()">Send Message</button>
 
 </div>
 

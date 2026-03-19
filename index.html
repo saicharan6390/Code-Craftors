@@ -1,142 +1,262 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Travel India</title>
+    <head>
+    <title>Travel India</title>
+    <link rel="icon" href="images/logo.png">
+    <style>
+        /* Overall Web Page Modification */
+        body{
+            margin:0;
+            font-family:Arial;
+            
+        }
 
-<style>
+        .logo
+        {
+            height: 100px;
+            width: 100px;
+            background-color: transparent;
+            border-radius: 10px;
+            margin-left: 100px;
+        }
 
-body{
-    margin:0;
-    font-family:Arial;
-    background:#f2f2f2;
+        /* Background Image setting */
+        .navbar-hero
+        {
+            background-image:url("images/himachal-pradesh.jpeg");
+            background-size: 1300px 1000px;
+            background-repeat: no-repeat;
+             backdrop-filter: blur(8px); 
+            
+        }
+
+        /* Navbar Modification */
+        .navbar{
+            background-color:transparent ;
+            padding:20px;
+            text-align: right;
+            float: right;
+            
+        }
+        
+        .navbar a{
+            color:black;
+            text-decoration:none;
+            font-size:20px;
+             margin-left:30px ;         
+        }
+        .navbar .contact
+        {
+            margin-right: 120px;
+        }
+
+        .navbar a:hover{
+            color:red;
+        }
+
+        /* Hero section modification or main content modification */
+        .hero{
+            
+            height:500px;
+            background-size:cover;
+            text-align:left;
+            margin-left: 200px;
+            color:white;
+            padding-top:150px;
+        }
+
+       .hero a {
+            text-decoration: none;
+            margin: 15px;
+            padding: 10px 20px;
+            
+            background-color: transparent;
+            color: orange;
+            border: 2px solid orange;
+
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Hover effect (optional but looks great) */
+        .hero a:hover {
+            border: 2px solid orange;   
+            background-color: orange;   
+            color: white;
+            
 }
+<<<<<<< HEAD
 /*  */
 .navbar{
     background:linear-gradient(135deg, rgb(0, 157, 255), whitesmoke);
     padding:15px;
 }
+=======
+        .hero .left 
+        {
+            font-size: 40px;
+            font-weight: bolder;
+            color: white;
+            font-weight: 900;
+        }
 
-.navbar a{
-    color:black;
-    text-decoration:none;
-    margin-right:20px;
-    font-size:18px;
-}
+        .section{
+            padding:60px;
+            text-align:center;
+            font-size: 25px;
+            /* background:linear-gradient(125deg ,rgba(6, 113, 234, 0.696), rgb(255, 255, 255),rgb(255, 169, 183) ); */
+        }
+>>>>>>> dee9633 (Updated Files)
 
-.navbar a:hover{
-    color:red;
-}
+        .section .top
+        {
+            display: inline-block;
+            /* margin-top: 40px; */
+            margin-bottom: 80px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .section .top h2, a
+        {
+            display: inline;
+            margin-left: 80px;
 
-.hero{
-    background-image:url("images/Taj-Mahal.jpg");
-    height:400px;
-    background-size:cover;
-    text-align:center;
-    color:white;
-    padding-top:150px;
-}
+        }
+        .section .top a
+        {
+            margin-right: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            
+            border: 2px solid rgb(13, 159, 212);
+            color: whitesmoke;
+            background-color: rgb(13, 159, 212);
+            padding: 8px;
+            border-radius: 10px;
+        }
 
+        .section .top a:hover
+        {
+            border: 2px solid rgb(13, 159, 212);
+            color: rgb(13, 159, 212);
+            background-color: white;
+            transition: 0.5s;
+        }
+
+<<<<<<< HEAD
 .hero h1, p
 {
    color: black;
 }
+=======
+        .place{
+            width:300px;
+            background:white;
+            margin:20px;
+            display:inline-block;
+            border:1px solid #ccc;
+            border-radius: 15px;
+            box-shadow:0px 10px 15px 0px ;
+            transition:0.3s;
+        }
+>>>>>>> dee9633 (Updated Files)
 
-.section{
-    padding:40px;
-    text-align:center;
-    background:linear-gradient(125deg ,rgba(6, 113, 234, 0.696), rgb(255, 255, 255),rgb(255, 169, 183) );
-}
+        .place img
+        {
+            border-radius: 15px;
+        }
 
-.place{
-    width:300px;
-    background:white;
-    margin:20px;
-    display:inline-block;
-    border:1px solid #ccc;
-    border-radius: 15px;
-    box-shadow:0px 10px 15px 0px ;
-    transition:0.3s;
-}
+        .place img{
+            width:100%;
+            height:200px;
+        }
 
-.place img
-{
-    border-radius: 15px;
-}
+        .madurai, .goa, .mysore
+        {
+            background:radial-gradient(ellipse, rgba(239, 57, 57, 0.6), white, pink) ;
+        }  
 
-.place img{
-    width:100%;
-    height:200px;
-}
+        .footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
 
-.madurai, .goa, .mysore
-{
-    background:radial-gradient(ellipse, rgba(239, 57, 57, 0.6), white, pink) ;
-}  
+        .madurai:hover
+        {
+            transform: translateY(-10px);
+        }
 
-.footer{
-    background:#333;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
+        .goa:hover
+        {
+            transform: translateY(-10px);
+        }
 
-.madurai:hover
-{
-    transform: translateY(-10px);
-}
-
-.goa:hover
-{
-    transform: translateY(-10px);
-}
-
-.mysore:hover
-{
-    transform: translateY(-10px);
-}
+        .mysore:hover
+        {
+            transform: translateY(-10px);
+        }
 
 
-</style>
-</head>
+    </style>
+    </head>
 
-<body>
+    <body>
+    <div class="navbar-hero">
+        <div class="top-navbar">
+            <img class="logo" src="images/logo.png" alt="Logo">
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="packages.html">Packages</a>
+                <a href="about.html">About</a>
+                <a class="contact" href="contact.html">Contact</a>
+            </div>
+        </div>
 
-<div class="navbar">
-<a href="index.html">Home</a>
-<a href="destinations.html">Destinations</a>
-<a href="packages.html">Packages</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</div>
-
-<div class="hero">
-    <h1>Explore Incredible India</h1>
-    <p>Travel the most beautiful places</p>
-</div>
-
-<div class="section">
-    <h2>Popular Places</h2>
-
-    <div class="place madurai">
-        <img src="images/temple.avif">
-        <h3>Madurai</h3>
+        <div class="hero">
+            <p class="left">Explore the World with HappyJourney 🌍</p>
+            <p class="right">Discover breathtaking destinations, unforgettable experiences, and travel like <br>
+                never before. Your adventure starts here.</p>
+            <br> <br>
+            <a href="#section">Explore</a>
+            <a href="#Book">Book Now</a>
+        </div>
     </div>
 
-    <div class="place goa">
-        <img src="images/goa.jpg">
-        <h3>Goa</h3>
-    </div>
+        <div class="section">
+            <div class="top">
+                <h2>Popular Places with HappyJourney </h2>
+                <a href="#">View all destinations →</a>
+            </div>
 
-    <div class="place mysore">
-        <img src="images/mysore.webp">
-        <h3>Mysore</h3>
-    </div>
+            <div class="place madurai">
+                <img src="images/temple.avif">
+                <h3>Madurai</h3>
+            </div>
 
-</div>
+            <div class="place goa">
+                <img src="images/goa.jpg">
+                <h3>Goa</h3>
+            </div>
 
-<div class="footer">
-    <p>© 2026 Travel India</p>
-</div>
+            <div class="place mysore">
+                <img src="images/mysore.webp">
+                <h3>Mysore</h3>
+            </div>
 
+<<<<<<< HEAD
 </body>
 </html>
+=======
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Travel India</p>
+        </div>
+
+    </body>
+</html>
+>>>>>>> dee9633 (Updated Files)
