@@ -137,7 +137,7 @@
             transition: 0.5s;
         }
 
-        .place{
+        /* .place{
             width:300px;
             background:white;
             margin:20px;
@@ -183,6 +183,51 @@
         .mysore:hover
         {
             transform: translateY(-10px);
+        } */
+
+        .main-content 
+        {
+            display: flex;
+            align-items: center;
+        
+        }
+        .main-content .left-text
+        {
+            height: 600px;
+            width: 320px;
+            margin: 10px;
+            background-color: transparent;
+            font-size: 15px;
+            font-family: sans-serif;
+            text-align: justify;
+            line-height: 20px;
+            border: 1px solid black;
+            padding: 3px;
+        }
+        .main-content .left-text .key 
+        {
+            display: flex;
+            /* align-items: flex-start; */
+
+        }
+        .main-content .left-text .key img
+        {
+            height: 50px;
+            width: 50px;
+        }
+        .main-content .right-images
+        {
+            /* margin-left: 20px; */
+            height: 600px;
+            width: 880px;
+            background-color: red;
+        }
+
+        .main-content .left-text .key
+        {
+            /* padding: 3px; */
+            border: 1px solid white;
+            /* box-shadow: 0px 10px 10px 0px; */
         }
 
 
@@ -214,11 +259,47 @@
 
         <div class="section">
             <div class="top">
-                <h2>Popular Places with HappyJourney </h2>
+                <h2>Discover <span style="color: rgb(25, 222, 166);">India </span> with Happy Journey </h2>
                 <a href="#">View all destinations →</a>
             </div>
+            <div class="main-content">
+                <div class="left-text">
+                    <p>From peaceful temples to vibrant cities, explore the beauty, culture, and adventure across India.</p>
+                    <div class="key">
+                        <img src="images/key1.png" alt="">
+                        <p class="head">Personalized Trips</p> 
+                        <p class="centent">Trips designed just for your dream journey</p>
+                    </div>
+                    <div class="key">
+                        <p class="head">Local Guides</p>
+                        <p class="centent">Explore with experts who know every hidden gem</p>
+                    </div>
+                    <div class="key">
+                        <p class="head">Easy Booking</p>
+                        <p class="centent">Quick, smooth and stress-free travel planning</p>
+                    </div>
+                    <div class="key">
+                        <p class="head">Best Prices</p>
+                        <p class="centent">Affordable packages with no hidden costs</p>
+                    </div>
+                </div>
+                <div class="right-images">
 
-            <div class="place madurai">
+                </div>
+            </div>
+            
+
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Travel India</p>
+        </div>
+
+    </body>
+</html>
+
+<!-- 
+<div class="place madurai">
                 <img src="images/temple.avif">
                 <h3>Madurai</h3>
             </div>
@@ -232,12 +313,4 @@
                 <img src="images/mysore.webp">
                 <h3>Mysore</h3>
             </div>
-
-        </div>
-
-        <div class="footer">
-            <p>© 2026 Travel India</p>
-        </div>
-
-    </body>
-</html>
+             -->
