@@ -86,7 +86,7 @@
             color: white;
             
 }
-        .hero .left 
+        .hero .hero-left 
         {
             font-size: 40px;
             font-weight: bolder;
@@ -94,142 +94,154 @@
             font-weight: 900;
         }
 
-        .section{
-            padding:60px;
-            text-align:center;
-            font-size: 25px;
-            /* background:linear-gradient(125deg ,rgba(6, 113, 234, 0.696), rgb(255, 255, 255),rgb(255, 169, 183) ); */
+        .explore {
+            display: flex;
+            padding: 60px;
+            padding-top: 15px;
+            gap: 40px;
         }
-
-
-        .section .top
+        .dest
         {
-            display: inline-block;
-            /* margin-top: 40px; */
-            margin-bottom: 80px;
-            margin-left: 10px;
-            margin-right: 10px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            margin-left: 1050px;
         }
-        .section .top h2, a
+        .dest a
         {
-            display: inline;
-            margin-left: 80px;
-
-        }
-        .section .top a
-        {
-            margin-right: 10px;
-            font-size: 20px;
+            background-color: transparent;
+            color: orange;
             text-decoration: none;
-            
-            border: 2px solid rgb(13, 159, 212);
-            color: whitesmoke;
-            background-color: rgb(13, 159, 212);
-            padding: 8px;
+            padding: 8px 12px;
+            border: 2px solid orange;
             border-radius: 10px;
+            transition: 0.3s;
         }
 
-        .section .top a:hover
+        .dest a:hover
         {
-            border: 2px solid rgb(13, 159, 212);
-            color: rgb(13, 159, 212);
-            background-color: white;
-            transition: 0.5s;
+            background-color: orange;
+            color: white;
+
         }
 
-        /* .place{
-            width:300px;
-            background:white;
-            margin:20px;
-            display:inline-block;
-            border:1px solid #ccc;
-            border-radius: 15px;
-            box-shadow:0px 10px 15px 0px ;
-            transition:0.3s;
+    /* LEFT SIDE */
+        .left {
+            width: 40%;
         }
 
-        .place img
-        {
-            border-radius: 15px;
+        .left h1 {
+            font-size: 40px;
         }
 
-        .place img{
-            width:100%;
-            height:200px;
+        .left span {
+            color: #4f46e5;
         }
 
-        .madurai, .goa, .mysore
-        {
-            background:radial-gradient(ellipse, rgba(239, 57, 57, 0.6), white, pink) ;
-        }  
-
-        .footer{
-            background:#333;
-            color:white;
-            text-align:center;
-            padding:20px;
+        .left p {
+            color: gray;
+            margin-bottom: 30px;
         }
 
-        .madurai:hover
-        {
-            transform: translateY(-10px);
-        }
-
-        .goa:hover
-        {
-            transform: translateY(-10px);
-        }
-
-        .mysore:hover
-        {
-            transform: translateY(-10px);
-        } */
-
-        .main-content 
-        {
+        .feature {
             display: flex;
             align-items: center;
+            background: #f5f5f5;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+        }
+
+        .feature img {
+            width: 40px;
+            margin-right: 15px;
+        }
+
+        .feature h3 {
+            margin: 0;
+        }
+
+        .feature p {
+            margin: 0;
+            font-size: 14px;
+            color: gray;
+        }
+
+    /* RIGHT SIDE GRID */
+        .right {
+            width: 60%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 180px;
+            gap: 15px;
+        }
         
-        }
-        .main-content .left-text
-        {
-            height: 600px;
-            width: 320px;
-            margin: 10px;
-            background-color: transparent;
-            font-size: 15px;
-            font-family: sans-serif;
-            text-align: justify;
-            line-height: 20px;
-            border: 1px solid black;
-            padding: 3px;
-        }
-        .main-content .left-text .key 
-        {
+        .card {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            overflow: hidden;
             display: flex;
-            /* align-items: flex-start; */
-
-        }
-        .main-content .left-text .key img
-        {
-            height: 50px;
-            width: 50px;
-        }
-        .main-content .right-images
-        {
-            /* margin-left: 20px; */
-            height: 600px;
-            width: 880px;
-            background-color: red;
+            align-items: flex-end;
+            transition: 0.3s;
         }
 
-        .main-content .left-text .key
-        {
-            /* padding: 3px; */
-            border: 1px solid white;
-            /* box-shadow: 0px 10px 10px 0px; */
+        .overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            width: 100%;
+            padding: 15px;
+            color: white;
         }
 
+        .overlay h2 {
+            margin: 0;
+        }
+
+        .overlay p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .overlay a {
+            background-color: orange;
+            border: none;
+            text-decoration: none;
+            padding: 7px 11px;
+            border-radius: 8px;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .overlay a:hover
+        {
+            background-color:transparent;
+            color: orange;
+            border: 2px solid orange;
+
+        }
+
+    /* GRID SIZES */
+        .large {
+            grid-column: span 2;
+        }
+
+        .small {
+            grid-column: span 1;
+        }
+
+        .tall {
+            grid-row: span 2;
+        }
+
+        .wide {
+            grid-column: span 2;
+        }
+
+    /* HOVER EFFECT */
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+    }
 
     </style>
     </head>
@@ -248,69 +260,129 @@
         </div>
 
         <div class="hero">
-            <p class="left">Explore the World with HappyJourney 🌍</p>
-            <p class="right">Discover breathtaking destinations, unforgettable experiences, and travel like <br>
+            <p class="hero-left">Explore the World with HappyJourney 🌍</p>
+            <p class="hero-right">Discover breathtaking destinations, unforgettable experiences, and travel like <br>
                 never before. Your adventure starts here.</p>
             <br> <br>
             <a href="#section">Explore</a>
             <a href="#Book">Book Now</a>
         </div>
     </div>
+    <div class="dest">
+        <a href="destinations.html">View all destination →</a>
+    </div>
+    <section class="explore">
+        
+        <div class="left">
+            <h1>Discover <span>India</span> with Happy Journey</h1>
+            <p>
+            From peaceful temples to vibrant cities, explore the beauty, culture,
+            and adventure across India.
+            </p>
 
-        <div class="section">
-            <div class="top">
-                <h2>Discover <span style="color: rgb(25, 222, 166);">India </span> with Happy Journey </h2>
-                <a href="#">View all destinations →</a>
+            <div class="feature">
+            <img src="images/key1.png">
+            <div>
+                <h3>Personalized Trips</h3>
+                <p>Trips designed just for your dream journey</p>
             </div>
-            <div class="main-content">
-                <div class="left-text">
-                    <p>From peaceful temples to vibrant cities, explore the beauty, culture, and adventure across India.</p>
-                    <div class="key">
-                        <img src="images/key1.png" alt="">
-                        <p class="head">Personalized Trips</p> 
-                        <p class="centent">Trips designed just for your dream journey</p>
-                    </div>
-                    <div class="key">
-                        <p class="head">Local Guides</p>
-                        <p class="centent">Explore with experts who know every hidden gem</p>
-                    </div>
-                    <div class="key">
-                        <p class="head">Easy Booking</p>
-                        <p class="centent">Quick, smooth and stress-free travel planning</p>
-                    </div>
-                    <div class="key">
-                        <p class="head">Best Prices</p>
-                        <p class="centent">Affordable packages with no hidden costs</p>
-                    </div>
-                </div>
-                <div class="right-images">
+            </div>
 
-                </div>
+            <div class="feature">
+            <img src="images/key2.png">
+            <div>
+                <h3>Local Guides</h3>
+                <p>Explore with experts who know every hidden gem</p>
             </div>
+            </div>
+
+            <div class="feature">
+            <img src="images/key3.png">
+            <div>
+                <h3>Easy Booking</h3>
+                <p>Quick, smooth and stress-free travel planning</p>
+            </div>
+            </div>
+
+            <div class="feature">
+            <img src="images/key4.png">
+            <div>
+                <h3>Best Prices</h3>
+                <p>Affordable packages with no hidden costs</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="right">
             
+            <div class="card large" style="background-image:url('images/goa.jpg')">
+            <div class="overlay">
+                <h2>Goa</h2>
+                <p>Relax & Beaches</p> <br>
+                <a href="">Explore →</a>
+            </div>
+            </div>
+
+            <div class="card small" style="background-image:url('images/ooty.jpg')">
+            <div class="overlay">
+                <h2>Ooty</h2>
+                <p>Boating Bliss</p> <br>
+                <a href="">Explore →</a>
+            </div>
+            </div>
+
+            <div class="card tall" style="background-image:url('images/temple.avif')">
+            <div class="overlay">
+                <h2>Meenakshi Temple</h2>
+                <p>Historic Temple</p> <br>
+                <a href="">Explore →</a>
+            </div>
+            </div>
+
+            <div class="card wide" style="background-image:url('images/kerala.jpg')">
+            <div class="overlay">
+                <h2>Kerala</h2>
+                <p>God's own contry</p> <br>
+                <a href="">Explore →</a>
+            </div>
+            </div>
+
+            <div class="card small" style="background-image:url('images/Taj-Mahal.jpg')">
+            <div class="overlay">
+                <h2>Taj Mahal</h2>
+                <p>Iconic Monument</p> <br>
+                <a href="">Explore →</a>
+            </div>
+            </div>
+
+            <div class="card small" style="background-image:url('images/manali.jpg')">
+            <div class="overlay">
+                <h2>Manali</h2>
+                <p>Snowy Hills</p> <br>
+                <a href="">Explore →</a>
+            </div>
+            </div>
 
         </div>
+    </section>
 
-        <div class="footer">
-            <p>© 2026 Travel India</p>
+    <section class="popular_tours">
+        <div class="text">
+            <h1>Our Most Populat Tours</h1>
+            <p>Discour India's most loved destinations with HappyJourney. These tours are crafted to bring you unique <br> 
+            experiences, beautiful sights and unforgettable memories.</p>
+        </div>
+        <div class="tour-btn">
+            <a href="packages.html">View all Tours →</a>
         </div>
 
-    </body>
+        <div class="card-container">
+
+        </div>
+    </section>
+    <div class="footer">
+        <p>© 2026 Travel India</p>
+    </div>
+
+</body>
 </html>
-
-<!-- 
-<div class="place madurai">
-                <img src="images/temple.avif">
-                <h3>Madurai</h3>
-            </div>
-
-            <div class="place goa">
-                <img src="images/goa.jpg">
-                <h3>Goa</h3>
-            </div>
-
-            <div class="place mysore">
-                <img src="images/mysore.webp">
-                <h3>Mysore</h3>
-            </div>
-             -->
